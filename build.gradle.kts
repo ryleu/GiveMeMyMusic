@@ -8,12 +8,14 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://jitpack.io")
+    }
 }
 
-val jdaVersion = "5.0.0-beta.5"
-
 dependencies {
-    implementation("net.dv8tion:JDA:$jdaVersion")
+    implementation("net.dv8tion:JDA:5.0.0-beta.5")
+    implementation("com.github.walkyst:lavaplayer-fork:1.4.0")
 }
 
 kotlin {
